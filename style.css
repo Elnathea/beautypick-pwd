@@ -1,8 +1,3 @@
-/* ================================================
-   style.css — Beauty Pick
-   Tema: Hijau natural, elegan, dan modern
-   ================================================ */
-
 /* ------------------------------------------------
    1. RESET & VARIABEL GLOBAL
 ------------------------------------------------ */
@@ -205,10 +200,34 @@ body {
     height: 220px;
 }
 
+.product-detail-image-wrapper {
+    background: linear-gradient(135deg, #f0f4ea 0%, #e8f0df 100%);
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 420px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.product-detail-image-wrapper img {
+    max-height: 500px;
+    width: 100%;
+    object-fit: contain; 
+    transition: transform 0.4s ease;
+    filter: drop-shadow(0 8px 20px rgba(0,0,0,0.10));
+}
+
+.product-detail-image-wrapper:hover img {
+    transform: scale(1.04);
+}
+
 .product-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: transform 0.4s ease;
 }
 
